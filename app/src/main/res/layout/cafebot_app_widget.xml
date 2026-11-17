@@ -1,0 +1,96 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.CafebotAPP.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.CafebotAPP.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top row -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teamName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Example team"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/teamNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#XXXX"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/teamLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="www.example.com"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/meetData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meet stats:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meetWins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wins: 0" />
+
+            <TextView
+                android:id="@+id/meetLosses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Losses: 0" />
+
+            <TextView
+                android:id="@+id/leagueRank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="League rank: 1" />
+        </LinearLayout>
+
+        <!-- Bottom section -->
+
+
+    </LinearLayout>
+
+</RelativeLayout>
